@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]
+        {
+         border:2px solid black;
+        }
+        input[type=button]
+        {
+         background-color:white;
+         color:black;
+        }
+        </style>
+</head>
+<body>
+        <br><br>
+        <form name="myform">
+        <input type="text" name="fst"><br><br>
+
+        <input type="button" name="" value="Additional" onclick="add()"><br>
+        <input type="button" name="" value="Subtraction" onclick="subtract()"><br>
+        <input type="button" name="" value="Multiplication" onclick="multiply()"><br>
+        <input type="button" name="" value="Distribution" onclick="divide()"><br>
+       
+        <input type="text" name="snd"><button onclick="calc();">=</button>
+
+         <input type="text" name="result">
+       
+        </form>
+       
+        <script type="text/javascript">
+         function add(){
+          fst=parseInt(myform.fst.value);
+          snd=parseInt(myform.snd.value);
+          result=fst+snd;
+          myform.result.value=result;
+         }
+       
+         function subtract() {
+          fst=parseInt(myform.fst.value);
+          snd=parseInt(myform.snd.value);
+          result=fst-snd;
+          myform.result.value=result;
+         }
+       
+         function multiply(){
+          fst=parseInt(myform.fst.value);
+          snd=parseInt(myform.snd.value);
+          result=fst*snd;
+          myform.result.value=result;
+         }
+         function divide(){
+          fst=parseInt(myform.fst.value);
+          snd=parseInt(myform.snd.value);
+          result=fst/snd;
+          myform.result.value=result;
+         }
+        </script> 
+</body>
+</html>
